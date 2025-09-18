@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage Design</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body onload="showBands(3)">
+    <nav>
+        <div class="icon">
+            <img src="/static/images/logo/resistorify.png" alt="Your Logo">
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#calculator">CALCULATOR</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#footer">CONTACT</a></li>
+            </ul>
+        </div>
+        <div class="search">
+            <div>
+                <input class="srch" type="search" name="" placeholder="Type to text">
+                <button class="btn">Search</button>
+            </div>
+        </div>
+    </nav> 
+    <section id="home" class="hero-section">
+        <!-- <img src="/static/images/ASSET_HOMEPAGE.png" alt="Hero Image">  -->
+        <!-- <div class="overlay"></div>
+        <div class="hero-content"></div>  -->
+    </section>
+
+    <div class="main">
+        <div class="container">
+            <div class="content">
+                <div class="title">RESISTOR<span>IFY</span></div>
+                <p class="par">Welcome to our Resistor Calculator, where precision meets simplicity!<br>Whether you're an electronics enthusiast or a seasoned engineer, this tool provides a seamless experience for <br>determining resistor values with utmost accuracy. Navigate the complexities of circuit design <br>effortlessly
+                as you harness the power of our intuitive calculator.</p>
+            </div>
+                    
+            <div id="calculator" class="container2">
+                <div class="container3">
+                    <div class="calculator">
+                        <div class="calculator_nav">
+                            <span>Number of Bands</span>
+                            <ul class="nav-links">
+                                <li><button onclick="showBands(3)">3 Bands</button> </li>
+                                <li><button onclick="showBands(4)">4 Bands</button></li>
+                                <li><button onclick="showBands(5)">5 Bands</button></li>
+                                <li><button onclick="showBands(6)">6 Bands</button></li>
+                            </ul>
+                        </div>
+                        <div class="sub_container">
+                            <h3> Resistor Parameters </h3>
+                            <div id="band1">
+                                <h4> 1st Band of color </h4>
+                                <div class="dropdown">
+                                    <select id="band1Select" class="dropdown-content">
+                                        <option value="black" selected disabled hidden></option>
+                                        <option class="black" value="black">black</option>
+                                        <option class="brown" value="brown">brown</option>
+                                        <option class="red" value="red">red</option>
+                                        <option class="orange" value="orange">orange</option>
+                                        <option class="yellow" value="yellow">yellow</option>
+                                        <option class="green" value="green">green</option>
+                                        <option class="blue" value="blue">blue</option>
+                                        <option class="violet" value="violet">violet</option>
+                                        <option class="gray" value="gray">gray</option>
+                                        <option class="white" value="white">white</option>
+                                    </select>
+                                </div>
+                                <div id="band1Color"></div>
+                            </div>
+                                
+                            <div id="band2">    
+                                <h4> 2nd Band of color </h4>
+                                <div class="dropdown">
+                                <select id="band2Select" class="dropdown-content">
+                                    <option value="black" selected disabled hidden></option>
+                                    <option class="black" value="black">black</option>
+                                    <option class="brown" value="brown">brown</option>
+                                    <option class="red" value="red">red</option>
+                                    <option class="orange" value="orange">orange</option>
+                                    <option class="yellow" value="yellow">yellow</option>
+                                    <option class="green" value="green">green</option>
+                                    <option class="blue" value="blue">blue</option>
+                                    <option class="violet" value="violet">violet</option>
+                                    <option class="gray" value="gray">gray</option>
+                                    <option class="white" value="white">white</option>
+                                </select>
+                            </div>
+                            <div id="band2Color"></div>
+                        </div>
+
+                        <div id="band3">
+                            <h4> 3rd Band of color </h4>
+                            <div class="dropdown">
+                                <select id="band3Select" class="dropdown-content">
+                                    <option value="black" selected disabled hidden></option>
+                                    <option class="black" value="black">black</option>
+                                    <option class="brown" value="brown">brown</option>
+                                    <option class="red" value="red">red</option>
+                                    <option class="orange" value="orange">orange</option>
+                                    <option class="yellow" value="yellow">yellow</option>
+                                    <option class="green" value="green">green</option>
+                                    <option class="blue" value="blue">blue</option>
+                                    <option class="violet" value="violet">violet</option>
+                                    <option class="gray" value="gray">gray</option>
+                                    <option class="white" value="white">white</option>
+                                </select>
+                            </div>
+                            <div id="band3Color"></div>
+                        </div>
+            
+                        <div id="multiplier">
+                            <h4> Multiplier </h4>
+                            <div class="dropdown">
+                                <select id="band4Select" class="dropdown-content">
+                                    <option value="black" selected disabled hidden></option>
+                                    <option class="black" value="black">black</option>
+                                    <option class="brown" value="brown">brown</option>
+                                    <option class="red" value="red">red</option>
+                                    <option class="orange" value="orange">orange</option>
+                                    <option class="yellow" value="yellow">yellow</option>
+                                    <option class="green" value="green">green</option>
+                                    <option class="blue" value="blue">blue</option>
+                                    <option class="gold" value="gold">gold</option>
+                                    <option class="silver" value="silver">silver</option>
+                                </select>
+                            </div>
+                            <div id="multiplierColor"></div>
+                        </div>
+                            
+                        <div id="tolerance">
+                            <h4> Tolerance </h4>
+                            <div class="dropdown">
+                                <select id="band5Select" class="dropdown-content">
+                                    <option value="black" selected disabled hidden></option>
+                                    <option class="brown" value="brown">brown</option>
+                                    <option class="red" value="red">red</option>
+                                    <option class="green" value="green">green</option>
+                                    <option class="blue" value="blue">blue</option>
+                                    <option class="violet" value="violet">violet</option>
+                                    <option class="gray" value="gray">gray</option>
+                                    <option class="gold" value="gold">gold</option>
+                                    <option class="silver" value="silver">silver</option>
+                                </select>
+                            </div>
+                            <div id="toleranceColor"></div>
+                        </div>
+
+                            <div id="toleranceCoefficient">
+                                <h4> Tolerance Coefficient</h4>
+                                <div class="dropdown">
+                                    <select id="band6Select" class="dropdown-content">
+                                        <option value="black" selected disabled hidden></option>
+                                        <option class="brown" value="black">black</option>
+                                        <option class="red" value="brown">brown</option>
+                                        <option class="green" value="red">red</option>
+                                        <option class="blue" value="orange">orange</option>
+                                        <option class="violet" value="yellow">yellow</option>
+                                        <option class="gray" value="green">green</option>
+                                        <option class="gold" value="blue">blue</option>
+                                        <option class="silver" value="violet">violet</option>
+                                        <option class="silver" value="gray">gray</option>
+                                    </select>
+                                </div>
+                                <div id="toleranceCoefficientColor"></div>
+                            </div>
+                                
+                            <h4> Resistance Value </h4>
+                            <div class="rv_result">
+                                <p>Result: </p>
+                            </div>
+                            <button class="Result" role="button">Result</button>
+                        </div>
+                    </div> 
+                    <img class="resistor" src="/static/images/3resistor.png" alt="resistor">  
+                </div>
+                <div id="about" class="about">
+                    <div class="header-container">
+                        About Resistor
+                    </div>
+                    <div>
+                        <p>A resistor is a simple electrical part with two ends that controls how much electricity flows in a circuit. Its job is to decrease the electricity flow and lessen the voltage in a specific part of the circuit. It's usually made of coiled copper wires around a ceramic rod, with an insulating paint covering the outside.</p>
+                        <p>In a resistor:</p>
+                        <p><strong>Voltage (V):</strong> The force that pushes electric charge through it.</p>
+                        <p><strong>Current (I):</strong> The flow of electric charge through the resistor.</p>
+                        <p><strong>Resistance (R):</strong> The resistor's opposition to current flow.</p>
+                        <p>They're related by Ohm's Law: <strong>V = I × R</strong>. More voltage means more current, while higher resistance reduces current for a given voltage.</p>
+                    </div>
+                </div>
+                <div class="how">
+                    <div class="header-container">
+                        How to Read a Resistor Color Code Chart for 3/4/5/6 Band Resistors
+                    </div>
+                    <div>
+                        <p>
+                            Just have a look at the resistor color code chart below and see the calculations, how the resistance value is calculated according to this chart. <a href="https://www.youtube.com/watch?v=GLD7AgAYqwA">https://www.youtube.com/watch?v=GLD7AgAYqwA</a>
+                        </p>
+                        <img src="https://static4.arrow.com/-/media/arrow/images/miscellaneous/h/how-to-read-resistor-color-codes.jpg" alt="Resistor Color Code Chart">
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <div class="onyx">
+        <img class="title_team" src="/static/images/MEET_THE_TEAM.png" alt="title_contributors">
+        <img class="team" src="/static/images/Contributors.png" alt="contributors">
+        <footer id="footer" class="footer">
+            <div class="logo_links">
+                <div>
+                    <a href="https://github.com/akhimverona/Resistor-Calculator/tree/main"><img src="assets/logo/github.png"></a>
+                    <a href=""><img src="/static/images/logo/acrobat.png"></a>
+                    <a href=""><img src="/static/images/logo/codeshare.png"></a>
+                    <a href=""><img src="/static/images/logo/linkedin.png"></a>
+                    <a href="https://drive.google.com/drive/folders/1eB2kSnHf2z424J_TQoB0g3146j0j89Aw?usp=sharing"><img src="assets/logo/gdrive.png"></a>
+                    <a href=""><img src="/static/images/logo/gmail.png"></a>
+                    <a href=""><img src="/static/images/logo/discord.png"></a>
+                </div>
+            </div>
+            <div class="foot1">
+                <div class="f_maint">
+                    EXPLORE
+                </div>
+                <div class="foot1c">
+                    <div class="foot1-1">
+                        <span class="f_subt">
+                            GITHUB
+                        </span>
+                        <span class="f_cont">
+                            <a href="https://github.com/akhimverona/Resistor-Calculator/tree/main">Resistorify</a>
+                        </span>
+                        
+                        <span class="f_subt">
+                            GDRIVE
+                        </span>
+                        <span class="f_cont">
+                            Video Explanation Assets
+                        </span>
+                        <span class="f_subt">
+                            PDF
+                        </span>
+                        <span class="f_cont">
+                            Resistorify.pdf
+                        </span>
+                    </div>
+                    <div class="foot1-2">
+                        <span class="f_subt">
+                            CODESHARE
+                        </span>
+                        <span class="f_cont">
+                            <span>main.py</span>
+                            <span>class.py</span>
+                            <span>function.py</span>
+                            <span>index.html</span>
+                            <span>style.pcss</span>
+                            <span>4Bands.html</span>
+                            <span>5Bands.html</span>
+                            <span>6Bands.html</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="foot2">
+                <div class="f_maint">
+                    CONTRIBUTORS
+                </div>
+                <div class="foot2c">
+                    <div class="foot2-1">
+                        <span class="f_subt">
+                            LINKEDIN
+                        </span>
+                        <span class="f_cont">
+                            <a href="https://www.linkedin.com/in/mikyla-angala-b75440294/">Mikyla Angala</a>
+                            <a href="https://www.linkedin.com/in/angela-khim-verona-876570293/">Angela Khim Verona</a>
+                        </span>
+                        
+                        <span class="f_subt">
+                            GITHUB
+                        </span>
+                        <span class="f_cont">
+                            <a href="https://github.com/eimikiii">eimikiii</a>
+                            <a href="https://github.com/akhimverona">akhimverona</a>
+                        </span>
+                    </div>
+                    <div class="foot2-2">
+                        <span class="f_subt">
+                            EMAIL
+                        </span>
+                        <span class="f_cont">
+                            <a href="">angalamikyla@gmail.com<a>
+                            <a href="">angelakhim24@gmail.com</a>
+                        </span>
+                        
+                        <span class="f_subt">
+                            DISCORD
+                        </span>
+                        <span class="f_cont">
+                            <span>engr_mik</span>
+                            <span>celestelucienne</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+    <script>
+        let selectedBands = 3;
+        function showBands(numBands) {
+            selectedBands = numBands;
+            // Hide all bands and related elements
+            document.getElementById('band1').style.display = 'none';
+            document.getElementById('band2').style.display = 'none';
+            document.getElementById('band3').style.display = 'none';
+            document.getElementById('multiplier').style.display = 'none';
+            document.getElementById('tolerance').style.display = 'none';
+            document.getElementById('toleranceCoefficient').style.display = 'none';
+
+            // Show bands based on the selected number
+            if (numBands >= 3) {
+                document.getElementById('band1').style.display = 'block';
+                document.getElementById('band2').style.display = 'block';
+                document.getElementById('multiplier').style.display = 'block';
+            }
+            if (numBands >= 4) {
+                document.getElementById('tolerance').style.display = 'block';
+            }
+            if (numBands >= 5) {
+                document.getElementById('band3').style.display = 'block';
+            }
+            if (numBands >= 6) {
+                document.getElementById('toleranceCoefficient').style.display = 'block';
+            }
+        }
+
+        // Get labels from dropdowns
+        // var label1 = document.getElementById('d1');
+        // var label2 = document.getElementById('d2');
+        // var label3 = document.getElementById('d3');
+        // var label4 = document.getElementById('d4');
+        // var label5 = document.getElementById('d5');
+        // var label6 = document.getElementById('d6');
+
+        // Add event listeners to each dropdown
+        document.getElementById('band1Select').addEventListener('change', function() {
+            console.log('Selected option for band 1:', this.value);
+        });
+
+        document.getElementById('band2Select').addEventListener('change', function() {
+            console.log('Selected option for band 2:', this.value);
+        });
+
+        document.getElementById('band3Select').addEventListener('change', function() {
+            console.log('Selected option for band 3:', this.value);
+        });
+
+        document.getElementById('band4Select').addEventListener('change', function() {
+            console.log('Selected option for multiplier:', this.value);
+        });
+
+        document.getElementById('band5Select').addEventListener('change', function() {
+            console.log('Selected option for tolerance:', this.value);
+        });
+
+        document.getElementById('band6Select').addEventListener('change', function() {
+            console.log('Selected option for tolerance coefficient:', this.value);
+        });
+
+        // document.querySelector('.Result').addEventListener('click', function() {
+        //     console.log('Number of Chosen Bands:', selectedBands);
+        //     console.log('Selected option for band 1:', document.getElementById('band1Select').value);
+        //     console.log('Selected option for band 2:', document.getElementById('band2Select').value);
+        //     console.log('Selected option for band 3:', document.getElementById('band3Select').value);
+        //     console.log('Selected option for multiplier:', document.getElementById('band4Select').value);
+        //     console.log('Selected option for tolerance:', document.getElementById('band5Select').value);
+        //     console.log('Selected option for tolerance coefficient:', document.getElementById('band6Select').value);
+        // });
+
+        document.querySelector('.Result').addEventListener('click', function() {
+        var band1 = document.getElementById('band1Select').value;
+        var band2 = document.getElementById('band2Select').value;
+        var band3 = document.getElementById('band3Select').value;
+        var multiplier = document.getElementById('band4Select').value;
+        var tolerance = document.getElementById('band5Select').value;
+        var toleranceCoefficient = document.getElementById('band6Select').value;
+        var data = {
+            bands: [band1, band2, band3, multiplier, tolerance, toleranceCoefficient],
+            num_bands: selectedBands 
+        };
+
+
+        console.log('Data:', data);
+
+        fetch('/calculate_resistance/' + selectedBands, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+        .then(response => {
+            if (response.ok) {
+                return response.json();
+            } else {
+                throw new Error('Failed to calculate resistance');
+            }
+        })
+        .then(data => {
+            console.log('Resistance:', data.resistance);
+            var resultParagraph = document.querySelector('.rv_result p');
+            resultParagraph.innerHTML = 'Result: <strong>' + data.resistance + '</strong>';
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+    });
+
+    </script>
+    </body>
+</html>
+
